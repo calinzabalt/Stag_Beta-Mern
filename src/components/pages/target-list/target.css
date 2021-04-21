@@ -1,0 +1,75 @@
+.table{
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-spacing: 0 1em;
+}
+
+.table .drag_drop .item{
+    padding: 10px 30px;
+    display: inline-block;
+    width: 100px;
+}
+.table th{
+    padding: 10px 0px;
+    text-align: center;
+}
+.table .content .drag_drop{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.table .content svg{
+    width: 23px;
+    height: 23px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.table .drag_drop #low{
+    color: green;
+    position: relative;
+}
+.table .drag_drop #low::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: green;
+    top: 50%;
+    left: 20px;
+}
+.table .drag_drop #medium{
+    color: orange;
+    position: relative;
+}
+.table .drag_drop #medium{
+    color: orange;
+}
+.table .drag_drop #medium:before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: orange;
+    top: 50%;
+    left: 20px;
+}
+.table .drag_drop #high{
+    color: red;
+    position: relative;
+}
+.table .drag_drop #high:before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: red;
+    top: 50%;
+    left: 20px;
+}

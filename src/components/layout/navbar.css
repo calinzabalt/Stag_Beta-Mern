@@ -1,0 +1,9 @@
+.logo_div{
+    padding: 0px !important;
+    vertical-align: top;
+    position: absolute;
+    left: 10px;
+}
+.logo_div img{
+    width: 80px;
+}

@@ -1,0 +1,62 @@
+.add_new h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.add_new form{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add_new form .form_group label{
+    display: block;
+    margin-bottom: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.add_new form .form_group select{
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+    border: 1px solid #ebebeb;
+    padding: 0 10px;
+    border-radius: 6px;
+}
+.add_new form .form_group{
+    width: 100%;
+    padding: 12px 0px;
+}
+.add_new form .form_group input{
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+    border: 1px solid #ebebeb;
+    padding: 0 10px;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input:focus {
+    border: 1px solid #329e5e !important;
+    outline: none;
+}
+
+select:focus {
+    border: 1px solid #329e5e !important;
+    outline: none;
+}
+
+.form_group .btn_submit input{
+    color: #fff;
+    background: #ff6801;
+    max-width: 150px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form_group .btn_submit input:hover{
+    background-color: #cd5300;
+}
