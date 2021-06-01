@@ -30,7 +30,7 @@ export default class CreateUser extends Component{
         console.log(familymember);
         
         let token = localStorage.getItem("auth-token");
-        axios.post('http://localhost:5000/familymembers/add', familymember,
+        axios.post('https://mernfirstapp.herokuapp.com/familymembers/add', familymember,
         { headers: { "x-auth-token": token}})
             .then(res => console.log(res.data));
 

@@ -27,7 +27,7 @@ export default class CreateTarget extends Component{
 
     componentDidMount() {
         let token = localStorage.getItem("auth-token");
-        axios.get('http://localhost:5000/familymembers/',
+        axios.get('https://mernfirstapp.herokuapp.com/familymembers/',
         { headers: { "x-auth-token": token}})
             .then(response => {
                 if (response.data.length > 0) {
@@ -82,7 +82,7 @@ export default class CreateTarget extends Component{
 
         console.log(target);
         let token = localStorage.getItem("auth-token");
-        axios.post('http://localhost:5000/targets/add', target, 
+        axios.post('https://mernfirstapp.herokuapp.com/targets/add', target, 
         { headers: { "x-auth-token": token}})
             .then(res => console.log(res.data));
 

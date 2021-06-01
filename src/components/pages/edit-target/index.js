@@ -23,7 +23,7 @@ export default class EditTarget extends Component{
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/targets/'+this.props.match.params.id)
+        axios.get('https://mernfirstapp.herokuapp.com/targets/'+this.props.match.params.id)
             .then(response => {
                 this.setState({
                     username: response.data.username,
@@ -36,7 +36,7 @@ export default class EditTarget extends Component{
                 console.log(error);
             })
             let token = localStorage.getItem("auth-token");
-            axios.get('http://localhost:5000/familymembers/',
+            axios.get('https://mernfirstapp.herokuapp.com/familymembers/',
             { headers: { "x-auth-token": token}})
             .then(response => {
               if (response.data.length > 0) {
@@ -87,7 +87,7 @@ export default class EditTarget extends Component{
 
         console.log(target);
 
-        axios.post('http://localhost:5000/targets/update/' + this.props.match.params.id, target)
+        axios.post('https://mernfirstapp.herokuapp.com/targets/update/' + this.props.match.params.id, target)
             .then(res => console.log(res.data));
 
         window.location = '/';

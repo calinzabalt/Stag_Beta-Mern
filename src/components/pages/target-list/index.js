@@ -42,7 +42,7 @@ export default class TargetsList extends Component{
 
     componentDidMount() {
         let token = localStorage.getItem("auth-token");
-        axios.get('http://localhost:5000/targets/',
+        axios.get('https://mernfirstapp.herokuapp.com/targets/',
         { headers: { "x-auth-token": token}})
             .then(response => {
                 this.setState({ targets: response.data })
@@ -54,7 +54,7 @@ export default class TargetsList extends Component{
     }
 
     deleteTarget(id){
-        axios.delete('http://localhost:5000/targets/'+id,)
+        axios.delete('https://mernfirstapp.herokuapp.com/targets/'+id,)
             .then(res => console.log(res.data));
 
         this.setState({

@@ -28,12 +28,12 @@ function App() {
       }
 
       const tokenRes = await Axios.post(
-        "http://localhost:5000/users/tokenIsValid",
+        "https://mernfirstapp.herokuapp.com/users/tokenIsValid",
         null,
         { headers: { "x-auth-token": token}}
       );
       if (tokenRes.data){
-        const userRes = await Axios.get("http://localhost:5000/users/",
+        const userRes = await Axios.get("https://mernfirstapp.herokuapp.com/users/",
          {headers: {"x-auth-token": token},
         });
         setUserData({
