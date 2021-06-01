@@ -24,7 +24,7 @@ export default function AuthOptions() {
             {userData.user ? (
                 <>
                 <button onClick={logout}>Logout</button>
-                <li className="logo_div"><Link to="/"><img src={logo}/></Link></li>
+                <li className="logo_div"><Link to="/"><img alt="" src={logo}/></Link></li>
                 <li><Link to="/">Targets</Link></li>
                 <li><Link to="/create">Create Target Log</Link></li>
                 <li><Link to="/user">Create User</Link></li>

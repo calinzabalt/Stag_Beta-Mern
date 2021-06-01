@@ -38,7 +38,7 @@ export default function Login(){
     return (
         <div className="Login_Page">
             <div className="welcome_to_stag">
-                <img src={Logo}/>
+                <img alt="" src={Logo}/>
             </div>
             <h1>Log in</h1>
             {error && (
