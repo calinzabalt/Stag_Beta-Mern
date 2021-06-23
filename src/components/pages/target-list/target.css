@@ -1,20 +1,39 @@
 .table{
-    max-width: 970px;
+    max-width: 1180px;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
-    border-spacing: 0 1em;
+    letter-spacing: -7px;
+    box-sizing: border-box;
 }
 
 .table .drag_drop .item{
-    padding: 10px 30px;
     display: inline-block;
-    width: 100px;
+    letter-spacing: normal;
+    vertical-align: middle;
+    padding: 10px 15px;
+    box-sizing: border-box;
 }
-.table th{
-    padding: 10px 0px;
-    text-align: center;
+.table .drag_drop .item.username{
+    width: 10%;
 }
+.table .drag_drop .item.description{
+    width: 40%;
+    overflow: hidden;
+}
+.table .drag_drop .item.duration{
+    width: 10%;
+}
+.table .drag_drop .item.date{
+    width: 15%;
+}
+.table .drag_drop .item.edit_delete{
+    width: 15%;
+}
+.table .drag_drop .item.priority{
+    width: 10%;
+}
+
+
 .table .content .drag_drop{
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -40,7 +59,7 @@
     border-radius: 50%;
     background: green;
     top: 50%;
-    left: 20px;
+    left: 0px;
 }
 .table .drag_drop #medium{
     color: orange;
@@ -57,7 +76,7 @@
     border-radius: 50%;
     background: orange;
     top: 50%;
-    left: 20px;
+    left: 0px;
 }
 .table .drag_drop #high{
     color: red;
@@ -71,5 +90,5 @@
     border-radius: 50%;
     background: red;
     top: 50%;
-    left: 20px;
+    left: 0px;
 }

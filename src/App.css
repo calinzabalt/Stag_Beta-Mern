@@ -250,6 +250,7 @@ body .table th{
   transform: translateY(-50%);
   transition: all 0.5s ease;
   width: 300px;
+  z-index: 9;
 }
 .theme-color .show_color_picker svg{
   max-width: 60px;
@@ -281,17 +282,46 @@ body .table th{
 }
 
 /* New css for targets table */
-.Targets_page .table ul li{
-  list-style: none;
-  display: inline-block;
-  width: 160px;
-}
-
 .Targets_page .table ul{
   margin: 0;
   padding: 0;
   margin-top: 20px;
   margin-bottom: 20px;
+  letter-spacing: -7px;
+}
+
+.Targets_page .table ul li{
+  list-style: none;
+  display: inline-block;
+  text-align: left;
+  letter-spacing: normal;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.Targets_page .table ul li.username{
+  width: 10%;
+}
+
+.Targets_page .table ul li.description{
+  width: 40%;
+}
+
+.Targets_page .table ul li.duration{
+  width: 10%;
+}
+
+.Targets_page .table ul li.date{
+  width: 15%;
+}
+
+.Targets_page .table ul li.actions{
+  width: 15%;
+}
+
+.Targets_page .table ul li.priority{
+  width: 10%;
+  padding: 0;
 }
 
 /* Target Priority */
