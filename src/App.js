@@ -52,15 +52,17 @@ function App() {
       <UserContext.Provider value={{userData, setUserData}}>
           <Header />
           <ThemeColor/>
-          <Switch>
-            <Route path="/" exact component={TargetsList} />
-            <Route path="/login" component={Login} />
-            <Route path="/register" component={Register} />
-            <Route path="/edit/:id" component={EditTarget} />
-            <Route path="/create" component={CreateTarget} />
-            <Route path="/user" component={CreateUser} />
-            <Route path="/new-features" component={NewFeatures}/>
-          </Switch>
+          <div className="container">
+            <Switch>
+              <Route path="/" exact component={TargetsList} />
+              <Route path="/login" component={Login} />
+              <Route path="/register" component={Register} />
+              <Route path="/edit/:id" component={EditTarget} />
+              <Route path="/create" component={CreateTarget} />
+              <Route path="/user" component={CreateUser} />
+              <Route path="/new-features" component={NewFeatures}/>
+            </Switch>
+          </div>
         </UserContext.Provider>
     </BrowserRouter>
     </>

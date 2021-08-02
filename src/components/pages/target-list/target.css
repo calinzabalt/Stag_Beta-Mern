@@ -12,6 +12,7 @@
     vertical-align: middle;
     padding: 10px 15px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 .table .drag_drop .item.username{
     width: 10%;
@@ -91,4 +92,50 @@
     background: red;
     top: 50%;
     left: 0px;
+}
+
+.just_on_mobile{
+    display: none;
+}
+
+/* --------- Media query ---------*/
+@media only screen and (max-width: 1024px) {
+    .theme-color{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .table .drag_drop .item{
+        width: 50% !important;
+    }
+    .just_on_mobile{
+        display: inline-block;
+        margin-right: 5px;
+        font-weight: normal;
+    }
+    .table .drag_drop .item.username{
+        font-weight: bold;
+        width: 100% !important;
+    }
+    .table .drag_drop .item.description{
+        width: 100% !important;
+    }
+    .Targets_page .table ul{
+        display: none;
+    }
+    .table .drag_drop .item.date{
+        text-align: right;
+    }
+    .table .drag_drop .item.edit_delete{
+        text-align: right;
+    }
+    .table .drag_drop #high:before{
+        display: none;
+    }
+    .table .drag_drop #low:before{
+        display: none;
+    }
+    .table .drag_drop #medium:before{
+        display: none;
+    }
 }
