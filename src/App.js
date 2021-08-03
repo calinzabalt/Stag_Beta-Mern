@@ -1,17 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Axios from "axios";
+import React, { useState, useEffect } from 'react'
+import './App.css'
+import { BrowserRouter, Switch, Route } from "react-router-dom"
+import Axios from "axios"
 import Header from "./components/layout/Header"
-import TargetsList from "./components/pages/target-list/index";
+import Footer from "./components/layout/Footer"
+import TargetsList from "./components/pages/target-list/index"
 import EditTarget from "./components/pages/edit-target"
 import CreateTarget from "./components/pages/create-target"
 import CreateUser from "./components/pages/create-user"
-import Login from "./components/auth/Login";
-import Register from "./components/auth/Register";
-import UserContext from "./context/UserContext";
-import ThemeColor from "./components/changeThemeColor/theme";
+import Login from "./components/auth/Login"
+import Register from "./components/auth/Register"
+import UserContext from "./context/UserContext"
+import ThemeColor from "./components/changeThemeColor/theme"
 import NewFeatures from "./components/pages/new-features/index"
+import Terms from "./components/pages/TermsAndCondition/Terms"
+import Privacy from './components/pages/PrivacyPolicy/Privacy'
 
 function App() {
   const [userData, setUserData] = useState({
@@ -61,8 +64,12 @@ function App() {
               <Route path="/create" component={CreateTarget} />
               <Route path="/user" component={CreateUser} />
               <Route path="/new-features" component={NewFeatures}/>
+              <Route path="/new-features" component={NewFeatures}/>
+              <Route path="/Terms" component={Terms}/>
+              <Route path="/Privacy" component={Privacy}/>
             </Switch>
           </div>
+          <Footer/>
         </UserContext.Provider>
     </BrowserRouter>
     </>

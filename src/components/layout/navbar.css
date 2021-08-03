@@ -85,7 +85,7 @@
   .navbar .burger_button span{
       width: 28px;
       height: 1px;
-      background: #fff;
+      background: #000;
       margin: 5px 0px;
       display: block;
       transition: all 0.5s ease;
@@ -149,6 +149,7 @@
     }
     .menu_item_container_active .burger_button button span{
         margin: 0;
+        background: #fff;
     }
     .menu_item_container_active .burger_button button span:first-child{
         transform: rotate(45deg);

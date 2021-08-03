@@ -1,0 +1,18 @@
+.Terms .title h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+.Terms .desription p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.Terms{
+    padding-bottom: 50px;
+}
+.Terms ul li{
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 0px;
+}

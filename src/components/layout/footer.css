@@ -1,0 +1,21 @@
+.Footer {
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+.Footer ul{
+    margin: 0;
+    padding: 0;
+}
+.Footer ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.Footer ul li a{
+    text-decoration: none;
+    color: rgb(129, 125, 125);
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}

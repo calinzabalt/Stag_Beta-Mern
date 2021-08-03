@@ -103,8 +103,8 @@ export default class TargetsList extends Component{
                         <li className="description">Description</li>
                         <li className="duration">Duration</li>
                         <li className="date">Date</li>
-                        <li className="actions">Actions</li>
                         <li className="priority">Priority</li>
+                        <li className="actions">Actions</li>
                     </ul>
                     <DragDropContext onDragEnd={this.onDragEnd}>
                         <Droppable droppableId="droppable">

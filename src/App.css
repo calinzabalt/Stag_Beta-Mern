@@ -4,6 +4,9 @@ body{
 }
 #root{
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 body .table tr td{
@@ -320,8 +323,10 @@ body .table th{
 .container{
   padding: 30px 10px;
   max-width: 1180px;
-  width: auto;
+  width: 100%;
   margin: 0 auto;
+  flex-grow: 1;
+  box-sizing: border-box;
 }
 
 
